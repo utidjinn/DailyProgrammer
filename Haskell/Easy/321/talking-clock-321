@@ -1,0 +1,9 @@
+import Data.List
+
+main = do
+    input <- getArgs
+    outputTime input
+
+outputTime :: String -> IO ()
+outputTime cs = do
+    putStrLn $ "It's " + take 2 cs
